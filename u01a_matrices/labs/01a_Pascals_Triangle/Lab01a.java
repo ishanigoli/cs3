@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -13,6 +13,11 @@ public class Lab01a
 {
 	public static void main( String args[] ) throws IOException
 	{
-		//add code and test cases here
+		PascalsTriangle test = new PascalsTriangle(5);
+      test.createTriangle();
+      out.println(test.toString());
+      
+      //add code and test cases here
 	}
 }
+

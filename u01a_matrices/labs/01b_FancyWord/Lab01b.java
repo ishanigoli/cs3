@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -13,6 +13,9 @@ public class Lab01b
 {
 	public static void main( String args[] ) throws IOException
 	{
-		//add code and test cases here
+		FancyWord test = new FancyWord("DOGHOUSE");
+      out.println(test.toString());
+      //add code and test cases here
 	}
 }
+

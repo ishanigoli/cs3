@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -10,6 +10,10 @@ public class Lab01c
 {
 	public static void main( String args[] )
 	{
-		//add code and test cases here
+		MagicSquare test = new MagicSquare(3);
+      test.createMagic();
+      out.println(test.toString());
+      //add code and test cases here
 	}
 }
+

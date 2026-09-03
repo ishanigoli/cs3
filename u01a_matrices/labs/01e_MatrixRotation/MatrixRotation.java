@@ -12,8 +12,8 @@ public class MatrixRotation
 		{
         //    lab.regular( );       // display the matrix
         //    lab.upsideDown();     // display the matrix upside down
-        //    lab.right90();        // Rotate the matrix right 90°
-        //    lab.left90();         // Rotate the matrix left 90°
+        //    lab.right90();        // Rotate the matrix right 90Â°
+        //    lab.left90();         // Rotate the matrix left 90Â°
         //    lab.mirror();         // flip the image as in a mirror
         //    lab.doubleInverted(); // Upside down and mirrored
 		}
@@ -45,3 +45,4 @@ public class MatrixRotation
     /* Write the doubleInverted() method here */
 	
 }
+
