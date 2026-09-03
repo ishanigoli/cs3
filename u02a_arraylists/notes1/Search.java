@@ -23,3 +23,4 @@ public class Search
 		out.println(ray.contains(66));
 	}
 }
+

@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -11,15 +11,11 @@ public class WordTester
 	public static void main(String[] args)
 	{
 		//add test cases
-		
-		
-		
-		
-		
+      Word test = new Word("chicken"); 
+      out.println(test); 
+      out.println("num vowels == " + test.getNumVowels());
+      out.println("num chars == " + test.getLength());
 		//add more test cases
-		
-		
-		
 		
 		
 	}
