@@ -39,7 +39,7 @@ class Words
 	{
 		int count=0;
       for(Word w : words) {
-         if(w.getLength() == size);
+         if(w.getLength() == size)
             count++;
       }
 		return count;

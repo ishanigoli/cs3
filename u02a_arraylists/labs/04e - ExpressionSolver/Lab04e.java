@@ -13,5 +13,8 @@ public class Lab04e
 {
 	public static void main( String args[] )
 	{
+      ExpressionSolver test = new ExpressionSolver("3 + 5");
+      test.solveExpression();
+      out.println(test.toString());
 	}
 }
