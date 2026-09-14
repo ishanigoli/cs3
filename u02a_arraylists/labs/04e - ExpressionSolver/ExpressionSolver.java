@@ -23,17 +23,34 @@ public class ExpressionSolver
 	public void setExpression(String s)
 	{
       exp = s;
-      for(int i = 0; i < exp.length; i++) {
+      for(int i = 0; i < exp.length(); i++) {
          expression.add(exp.substring(i, i+1));
       }
 	}
 
 	public void solveExpression()
 	{ 
-      while(s.indexOf("*") != -1 || s.indexO("/") != -1) {
+      int ans = 0;
+      while(exp.indexOf("*") != -1 ||exp.indexOf("/") != -1) {
          for(int i = 0; i < expression.size(); i++) {
-            
-            
+            String op = expression.get(i);
+            if(op.equals("*") || op.equals("/")) {
+               int left = parseInt(expression.get(i-1));
+               int right = parseInt(expression.get(i+1));
+               if(op.equals("*")) {
+                  ans = left * right;
+
+               }
+               else {
+                  ans = left / right;
+               }
+            expression.remove(i-1);
+            expression.remove(i-1);
+            expression.set(i-1, ans);  
+            }
+         }
+      }
+
 	}
 
 	public String toString( )
