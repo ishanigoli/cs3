@@ -10,39 +10,39 @@ public class Number
 
 	public Number()
 	{
-
-
 	}
 
 	public Number(int num)
 	{
-
-
+		setNumber(num);
 	}
 	
 	public void setNumber(int num)
 	{
-
-
+      number = num;
 	}
 	
 	public int getNumber()
 	{
-		return 0;
+		return number;
 	}	
 	
 	public boolean isOdd()
 	{
-		return false;
+		if(number % 2 != 0)  
+			return true;
+		else 
+			return false;
 	}
 	
 	public boolean isPerfect()
 	{
 		int total=0;
-
-
-
-
+		for(int i = 1; i < number; i++) {
+			if(number % i == 0) {
+				total+=i;
+			}
+		}
 		return (number==total);
 	}	
 	
@@ -51,3 +51,4 @@ public class Number
 		return "";
 	}
 }
+

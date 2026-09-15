@@ -11,7 +11,8 @@ public class NumberTester
 	public static void main(String[] args)
 	{
 		//add test cases
-		
+		Number test = new Number(7);
+      test.setNumber();
 		
 		
 		
