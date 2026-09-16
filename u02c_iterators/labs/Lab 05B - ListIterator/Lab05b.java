@@ -13,8 +13,8 @@ public class Lab05b
 {
 	public static void main ( String[] args )
 	{
-      ListIteratorTest test = new ListIteratorTest("a b c a b c       a     x");
-      test.replace();
+      ListIteratorTest test = new ListIteratorTest("a b c a b c");
+      test.replace("a", "x");
       out.println(test);
 	}
 }

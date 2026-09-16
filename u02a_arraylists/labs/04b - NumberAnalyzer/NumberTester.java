@@ -12,11 +12,10 @@ public class NumberTester
 	{
 		//add test cases
 		Number test = new Number(7);
-      test.setNumber();
-		
-		
-		
-		
+		out.println(test);
+		out.println(test + " is Odd == " + test.isOdd());
+		out.println(test + " isPerfect == " + test.isPerfect());
+
 		//add more test cases
 		
 		

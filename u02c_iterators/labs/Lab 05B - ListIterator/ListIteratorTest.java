@@ -32,6 +32,6 @@ public class ListIteratorTest
 	}
 
 	public String toString() {
-		return list;
+		return list.toString();
 	}
 }

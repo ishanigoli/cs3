@@ -1,5 +1,4 @@
 import java.util.Iterator;
-import myarraylist.MyArrayList;
 
 public class MyArrayListTester
 {
