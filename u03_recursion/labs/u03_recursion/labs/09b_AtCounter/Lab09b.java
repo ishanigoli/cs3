@@ -4,12 +4,11 @@
 //Class -
 //Lab  -
 
-import java.util.*;
 import static java.lang.System.*;
 
-public class Lab09a
+public class Lab09b
 {
-	public static void main( String args[] )
+	public static void main(String args[])
 	{
 		//add test cases		
 	}
