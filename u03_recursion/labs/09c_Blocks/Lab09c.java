@@ -15,7 +15,7 @@ public class Lab09c
 	{
       String values[] = {"A","E","I","O","U"};
       Grid test = new Grid(12, 12, values);
-      out.println(test);
+      out.println(test + "A count == " + test.findMax("A"));
 	}
 }
 
