@@ -19,8 +19,7 @@ public class Grid
 
 	public Grid(int rows, int cols)
 	{
-	
-	
+	   setSize(rows,cols);
 	}
 
 	public void setSize(int rows, int cols)
@@ -30,8 +29,7 @@ public class Grid
 
 	public void setSpot(int row,int col, Cell val)
 	{
-	
-	
+	   grid[row][col] = val;
 	}
 	
 	public Cell getSpot(int row, int col)
@@ -60,12 +58,16 @@ public class Grid
 			for(int c=0;c<grid[r].length;c++)
 			{
 				Cell spot = grid[r][c];
+            if(spot!=null) {
+               spot = new Cell(setColor(getColor()));
+            }
 				
 				//if the current spot is not null
 
-
+            else {
+               full = false;
+            }
 				//else
-
 			}
 		}
 		return full;
@@ -75,15 +77,13 @@ public class Grid
 	{
 		String output="";
 		//for loop for row
-	
+	   for(int r = 0; r < getNumRows(); r++) {
+         for(int c = 0; c < getNumCols(); c++) {
+            output+= grid[r][c];
+         }
+      }
 	
 			//for loop for col
-	
-	
-	
-	
-	
-	
 		return output;
 	}
 
