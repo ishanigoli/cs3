@@ -59,7 +59,7 @@ public class Grid
 			{
 				Cell spot = grid[r][c];
             if(spot!=null) {
-               spot = new Cell(setColor(getColor()));
+               spot = new ColoredCell(r, c, 0+c, 0+r, true, Color.BLUE);
             }
 				
 				//if the current spot is not null
@@ -79,9 +79,10 @@ public class Grid
 		//for loop for row
 	   for(int r = 0; r < getNumRows(); r++) {
          for(int c = 0; c < getNumCols(); c++) {
-            output+= grid[r][c];
+            output+= grid[r][c] + " ";
          }
       }
+      output+="\n";
 	
 			//for loop for col
 		return output;

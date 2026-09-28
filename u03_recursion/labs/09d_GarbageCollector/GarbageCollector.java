@@ -28,8 +28,12 @@ public class GarbageCollector extends JPanel implements MouseListener
 			for(int c=0; c<trashMap.getNumCols(); c++)
 			{
 				int num = (int)(Math.random()*2);
-				if(num == 1)
+				if(num == 1) {
 					trashMap.setSpot(r,c,new ColoredCell(r*rows+10, c*cols+10, 10, 10, true, Color.ORANGE));
+            }
+            else {
+               trashMap.setSpot(r,c,new ColoredCell(r*rows+10, c*cols+10, 10, 10, false, Color.ORANGE));
+            }  
 				//else
 					//load in a different Cell
 			}
@@ -60,7 +64,7 @@ public class GarbageCollector extends JPanel implements MouseListener
 		{
 			int c = mouseY/cols;
 			int r = mouseX/rows;
-			pickUpTrash(r,c);
+			pickUpTrash(r,c, window);
 			mouseClicked = false;
 		}
 		drawTrashMap(window);
@@ -68,24 +72,26 @@ public class GarbageCollector extends JPanel implements MouseListener
 
 	public void drawTrashMap( Graphics window  )
 	{
-		
-		
-		
-		
-		
-		
-		
+      for(int r = 0; r < trashMap.getNumRows(); r++) {
+         for(int c = 0; c < trashMap.getNumCols(); c++) {
+            Cell cell = trashMap.getSpot(r,c);
+            cell.draw(window);
+          }
+      }
 	}
 
-	public void pickUpTrash( int r, int c )
+	public void pickUpTrash( int r, int c, Graphics window )
 	{
-	
-	
-	
-	
-	
-	
-	
+	   if(r < trashMap.getNumRows() && r >= 0 && c < trashMap.getNumCols() && c >= 0) {
+         ColoredCell cell = (ColoredCell)trashMap.getSpot(r,c);
+         if(cell!=null && cell.getFilled()) {
+            cell.setFilled(false);
+            pickUpTrash(r+1,c, window);
+            pickUpTrash(r-1,c, window);
+            pickUpTrash(r,c-1, window);
+            pickUpTrash(r,c+1, window);
+         }
+      }
 	}
 
 	public void mouseEntered(MouseEvent e) { }
