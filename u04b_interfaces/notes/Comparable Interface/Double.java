@@ -11,24 +11,7 @@ import sun.misc.FloatingDecimal;
 import sun.misc.FpUtils;
 import sun.misc.DoubleConsts;
 
-/**
- * The <code>Double</code> class wraps a value of the primitive type
- * <code>double</code> in an object. An object of type
- * <code>Double</code> contains a single field whose type is
- * <code>double</code>.
- * <p>
- * In addition, this class provides several methods for converting a
- * <code>double</code> to a <code>String</code> and a
- * <code>String</code> to a <code>double</code>, as well as other
- * constants and methods useful when dealing with a
- * <code>double</code>.
- *
- * @author  Lee Boynton
- * @author  Arthur van Hoff
- * @author  Joseph D. Darcy
- * @version 1.100, 04/07/06
- * @since JDK1.0
- */
+
 public final class Double extends Number implements Comparable<Double> {
     /**
      * A constant holding the positive infinity of type
@@ -949,3 +932,5 @@ public final class Double extends Number implements Comparable<Double> {
     /** use serialVersionUID from JDK 1.0.2 for interoperability */
     private static final long serialVersionUID = -9172774392245257468L;
 }
+
+

@@ -1,4 +1,4 @@
-//� A+ Computer Science
+//Â© A+ Computer Science
 // www.apluscompsci.com
 
 //sort example using an array of Comparable
@@ -24,3 +24,4 @@ public class Sort
 		}		
   }
 }
+

@@ -1,4 +1,4 @@
-//� A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -15,6 +15,10 @@ public class Lab06a
 {
 	public static void main( String args[] ) throws IOException
 	{
-		//add test cases
+		Comparable test = new Word("freddy");
+      out.println(test.compareTo("at"));
+      
+      //add test cases
 	}
 }
+

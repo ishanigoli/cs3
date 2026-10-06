@@ -1,4 +1,4 @@
-//� A+ Computer Science
+//Â© A+ Computer Science
 // www.apluscompsci.com
 
 //comparable example three
@@ -33,3 +33,4 @@ public class Creature implements Comparable
     return "" + size; 
   }
 }
+

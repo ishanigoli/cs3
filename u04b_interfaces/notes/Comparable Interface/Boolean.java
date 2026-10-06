@@ -245,3 +245,5 @@ public final class Boolean implements java.io.Serializable,
 	return ((name != null) && name.equalsIgnoreCase("true"));
     }
 }
+
+

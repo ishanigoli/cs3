@@ -1,4 +1,4 @@
-//� A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -20,3 +20,4 @@ class SiteName implements Comparable<SiteName>
 	//add a toString
 
 }
+

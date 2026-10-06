@@ -1,4 +1,4 @@
-//� A+ Computer Science
+//Â© A+ Computer Science
 // www.apluscompsci.com
 
 //comparable example two
@@ -51,3 +51,4 @@ public class ComparableTwo
 		}
   }
 }
+

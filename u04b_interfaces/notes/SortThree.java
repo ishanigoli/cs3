@@ -1,4 +1,4 @@
-//� A+ Computer Science
+//Â© A+ Computer Science
 // www.apluscompsci.com
 
 //comparable sort example
@@ -50,3 +50,4 @@ public class SortThree
 		out.println("\n\n");		
 	}
 }
+

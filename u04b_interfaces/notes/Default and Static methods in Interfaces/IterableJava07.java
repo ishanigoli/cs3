@@ -1,16 +1,18 @@
 /*
- * @(#)Comparable.java	1.26 06/04/21
+ * @(#)Iterable.java	1.5 06/04/07
  *
  * Copyright 2006 Sun Microsystems, Inc. All rights reserved.
  * SUN PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
  */
-
 package java.lang;
-import java.util.*;
 
-public interface Comparable<T> {
+import java.util.Iterator;
 
-    public abstract int compareTo(T o);
+
+public interface Iterable<T> {
+
+
+    Iterator<T> iterator();
 }
 
 

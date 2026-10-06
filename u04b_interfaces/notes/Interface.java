@@ -1,4 +1,4 @@
-//� A+ Computer Science
+//Â© A+ Computer Science
 // www.apluscompsci.com
 
 //interface example
@@ -19,3 +19,4 @@ public class Interface
 		out.println("Here is a ship " + y);
 	}
 }
+

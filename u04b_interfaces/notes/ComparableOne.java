@@ -1,4 +1,4 @@
-//� A+ Computer Science
+//Â© A+ Computer Science
 // www.apluscompsci.com
 
 //comparable example one
@@ -24,3 +24,4 @@ public class ComparableOne
 		out.println(a.compareTo(b));		
   }
 }
+

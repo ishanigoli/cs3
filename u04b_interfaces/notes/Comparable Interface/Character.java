@@ -5467,3 +5467,5 @@ class Character extends Object implements java.io.Serializable, Comparable<Chara
         return (char) (((ch & 0xFF00) >> 8) | (ch << 8));
     }
 }
+
+

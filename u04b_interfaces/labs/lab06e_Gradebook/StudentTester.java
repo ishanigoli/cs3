@@ -1,4 +1,4 @@
-//� A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -35,3 +35,4 @@ public class StudentTester
 		out.println(other.compareTo(other));										
 	}		
 }
+

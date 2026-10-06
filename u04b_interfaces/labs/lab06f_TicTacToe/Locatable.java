@@ -1,4 +1,4 @@
-//� A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -14,3 +14,5 @@ public interface Locatable
 	public int getX();
 	public int getY();
 }
+
+

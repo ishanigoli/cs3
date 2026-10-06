@@ -1,4 +1,4 @@
-//� A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -26,3 +26,4 @@ public class TicTacToe extends JFrame
 		TicTacToe run = new TicTacToe();
 	}
 }
+

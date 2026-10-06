@@ -1,4 +1,4 @@
-//� A+ Computer Science
+//Â© A+ Computer Science
 // www.apluscompsci.com
 
 //comparable example three
@@ -26,3 +26,4 @@ public class ComparableThree
 		out.println(monster.equals(monster));				
   }
 }
+
