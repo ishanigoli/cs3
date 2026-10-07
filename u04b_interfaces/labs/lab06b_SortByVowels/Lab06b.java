@@ -15,7 +15,25 @@ public class Lab06b
 {
 	public static void main( String args[] ) throws IOException
 	{
-		//add test cases		
+		
+      String data = "freddy at elephant whoooooodat alice tommy bobby it at about b";
+      Scanner scan = new Scanner(data);
+      
+      ArrayList<VowelWord> words = new ArrayList<VowelWord>();
+      while (scan.hasNext()) {
+         String wordStr = scan.next();
+         words.add(new VowelWord(wordStr));
+      }
+  
+      Collections.sort(words);
+
+
+      for (VowelWord word : words) {
+         out.println(word + " ");
+      }
+
+
+      //add test cases		
 	}
 }
 

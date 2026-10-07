@@ -15,10 +15,22 @@ public class Lab06a
 {
 	public static void main( String args[] ) throws IOException
 	{
-		Comparable test = new Word("freddy");
-      out.println(test.compareTo("at"));
-      
-      //add test cases
+      String data = "freddy at elephant whoooooodat alice tommy bobby it at about";
+      Scanner file = new Scanner(data);
+
+
+      ArrayList<Word> words = new ArrayList<Word>();
+      while (file.hasNext()) {
+         String wordStr = file.next();
+         words.add(new Word(wordStr));
+      }
+  
+      Collections.sort(words);
+
+
+      for (Word word : words) {
+         out.println(word + " ");
+      }
 	}
 }
 
