@@ -8,16 +8,26 @@ import static java.lang.System.*;
 
 class SiteName implements Comparable<SiteName>
 {
-	//add instance variables
-	
-	
-	//add a constructor
+//add instance variables
+private String name;
+private String category;
 
 
-	//add a compareTo
-
-
-	//add a toString
-
+public SiteName() {
 }
-
+public SiteName(String n) {
+ name = n;
+ int index = name.indexOf(".");
+ category = name.substring(index);
+}
+public int compareTo(SiteName other) {
+   int categoryCompare = this.category.compareTo(other.category);
+   if(categoryCompare != 0) {
+     return categoryCompare;
+   }
+   return this.name.compareTo(other.name);
+ }
+public String toString() {
+  return name;
+}
+}
