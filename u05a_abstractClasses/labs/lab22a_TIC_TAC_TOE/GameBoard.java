@@ -67,7 +67,8 @@ public class GameBoard extends Canvas implements MouseListener
 			if(determineWinner(window))
 			{
 			  //make a new board	
-			  
+			  board = new Grid(BOARDSIZE,BOARDSIZE);
+         
 			  //clear the screen
 			}	
 			mouseClicked = false;
@@ -76,6 +77,7 @@ public class GameBoard extends Canvas implements MouseListener
 
 	public void markBoard()
 	{
+   
 		if(mouseX>=WIDTH/3&&mouseX<=WIDTH+50&&mouseY>=HEIGHT/3&&mouseY<=HEIGHT+50)
 		{
 			int r = mouseY/50-1;
@@ -90,9 +92,10 @@ public class GameBoard extends Canvas implements MouseListener
 				}
 				//save the current button pressed to compare to next button pressed
 				prevMouseButton=mouseButton;
+  
 			}
 			//if BUTTON3 was pressed and BUTTON3 was not pressed last mouse press
-
+         if(mouseButton==MouseEvent.BUTTON3&&prevMouseButton!=mouseButton)
 
 				//save the current button pressed to compare to next button pressed
 				prevMouseButton=mouseButton;				
@@ -117,16 +120,41 @@ public class GameBoard extends Canvas implements MouseListener
 				break;
 			}
 		}
-		
-		//check for vertical winner
-		
-		if(winner.equals(""))
-		{
-			//check for diagonal winner
+      
+      //check for vertical winner
+      for(int c = 0; c < board.getNumCols(); c++) 
+      {
+         Piece col0 = (Piece)board.getSpot(0,c);
+         Piece col1 = (Piece)board.getSpot(1,c);
+         Piece col2 = (Piece)board.getSpot(2,c);
+      
+         if(col0==null||col1==null||col2==null) continue;
+			
+			if(col0.getName().equals(col1.getName())&&col0.getName().equals(col2.getName()))
+			{
+				winner=col0.getName()+" wins vertically!";
+				break;
+			}
 		}
-		
-		if(winner.equals(""))
+      Piece topL = (Piece)board.getSpot(0,0);
+      Piece mid = (Piece)board.getSpot(1,1);
+      Piece botR = (Piece)board.getSpot(2,2);
+      Piece topR = (Piece)board.getSpot(0,2);
+      Piece botL = (Piece)board.getSpot(2,0);
+     
+      
+		if(winner.equals("") && topL!=null && mid!=null && botR!=null)
 		{
+        if(topL.getName().equals(mid.getName())&&topL.getName().equals(botR.getName())) {
+            winner = topL.getName() + " wins diagonally!";
+        }//check for diagonal winner
+		}
+      
+		if(winner.equals("") && topR!=null && mid!=null && botL!=null)
+		{
+         if(topR.getName().equals(mid.getName())&&topR.getName().equals(botL.getName())) {
+            winner = topR.getName() + " wins diagonally!";
+        }
 			//check for diagonal winner
 		}
 

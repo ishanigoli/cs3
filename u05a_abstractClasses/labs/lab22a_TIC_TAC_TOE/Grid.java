@@ -60,28 +60,28 @@ public class Grid
 			{
 				Cell spot = grid[r][c];
             if(spot!=null) {
-               spot = new Piece(r, c, 0+c, 0+r, true, Color.BLUE);
+               spot.draw(window);
             }
-			
-				//get current Cell
-					//if it is null
-					
-					
-					//else
-
-
-
+            else {
+               full = false;
+            }
+         }
+      }
 		return full;
+      //get current Cell
+		//if it is null
+		//else
 	}
 	
 	public String toString()
 	{
 		String output="";
-
-
-
-
-
+	   for(int r = 0; r < getNumRows(); r++) {
+         for(int c = 0; c < getNumCols(); c++) {
+            output+= grid[r][c] + " ";
+         }
+      }
+      output+="\n";
 		return output;
 	}
 }
