@@ -96,7 +96,10 @@ public class GameBoard extends Canvas implements MouseListener
 			}
 			//if BUTTON3 was pressed and BUTTON3 was not pressed last mouse press
          if(mouseButton==MouseEvent.BUTTON3&&prevMouseButton!=mouseButton)
-
+            if(piece==null)
+				{
+					board.setSpot(r,c,new Piece(5+c*50+50,5+r*50+50,WIDTH/3-10,HEIGHT/3-10,"O",Color.RED));
+				}
 				//save the current button pressed to compare to next button pressed
 				prevMouseButton=mouseButton;				
 		
